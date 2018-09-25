@@ -1,0 +1,304 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #F8F9F9;
+}
+
+.content {
+	width: 1140px;
+	margin: auto; 
+}
+
+/*päis*/
+
+header {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+#logo {
+	float: left;
+	font-size: 36px;
+}
+
+.search {
+	float: right;
+	height: 30px;
+	padding-left: 8px;
+	background-color: #ffffff;
+}
+
+/*navigatsiooniriba*/
+
+.nav {
+	margin-bottom: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #483C32;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-menu {
+	text-align: center;
+	background-color: #483C32;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+	text-decoration: none;
+	color: #F39C12;
+	margin: 0 10px 0 10px;
+    padding: 8px;
+    background-color: #483C32;
+}
+
+/*navigatsiooniribal praeguse lehe link valge taustaga. Et .nav-menu li a  {background-color: #483C32;} seda üle ei kirjutaks on lisatud !important*/
+.active a {
+	background-color: white !important;
+}
+
+.nav-menu a:hover {
+	background-color: #307D7E;
+	color: #ffffff;
+}
+
+.active a:hover {
+	background-color: #307D7E !important;
+	color: #ffffff;
+}
+
+/*banner*/
+
+/*pilt on teksti taust*/
+#banner-text {
+	color: white;
+	text-shadow: 2px 2px 8px #000000;
+	font-size: 120px;
+	text-align: center;
+	/*background-image: url("https://cdn.pixabay.com/photo/2015/05/15/14/21/architecture-768432_960_720.jpg");*/
+	background-image: url("hero-banner.jpg");
+
+	/* Ära korda, vaikimisi korratakse*/
+	background-repeat: no-repeat; 
+	
+	/* Kui pilti ei saa kuvada*/
+	background-color: #cccccc; 
+	
+	/* Tekstikasti suurus peal. Asendab height-i */
+	padding-top: 100px; 
+	
+	/* Tekstikasti suurus all. Asendab height-i */
+	padding-bottom: 100px; 
+	
+	/* paigutab keskele */
+	background-position: center; 
+	
+	/* Muudab pildi suurust, nii, et see kataks kogu konteineri */
+	background-size: cover; 
+	
+	/*kui lehel kerida, siis pilt jääb paigale, keritake üle pildi*/
+	background-attachment: fixed; 
+} 
+
+.main-posts, .other-posts {
+	float: left;
+}
+
+.main-posts {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width:75%
+}
+
+.main-posts h1 {
+	text-transform: uppercase;
+	margin-top: 20px;
+	color: #D35400;
+}
+
+.heading {
+	padding-top: 24px;
+}
+
+.author {
+	font-style: italic;
+	margin-top: 8px;
+}
+
+.date {
+	font-style: italic;
+	margin-bottom: 8px;
+}
+
+.main::first-letter {
+	font-size: 200%;
+}
+
+.main {
+	line-height: 145%;
+	text-align: justify;
+}
+
+.other-posts {
+	width: 22%;
+	margin-top: 60px;
+	margin-left: 18px; 
+}
+
+.other-posts h2 {
+	font-size: 32px;
+	color: #F39C12;
+	background-color: #E5E7E9;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.other-links li a {
+	text-decoration: none;
+	font-size: 30px;
+	color: #F39C12;
+}
+
+.other-links li{
+	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	background-color: #E5E7E9;
+}
+
+.other-links a{
+	background-color: #E5E7E9;
+}
+
+.other-links a:hover{
+	color: #307D7E;
+}
+
+/*raamatute leht*/
+
+.book {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.book-img {
+	width: 200px;
+	background-color: #E5E7E9;
+}
+
+.book-description {
+	padding-top: 8px;
+	width: 200px;
+	background-color: #E5E7E9;
+}
+
+.grid-container {
+	justify-content: center;
+	text-align: justify;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 60px 20px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #E5E7E9;
+}
+
+/*kontaktid*/
+
+.contact-inf {
+	background-color: #E5E7E9;
+}
+
+.contact, .map {
+	float: left;
+	background-color: #E5E7E9;
+}
+
+.contact {
+	width: 40%;
+	padding: 30px 0 406px 20px; 
+}
+
+.contact h1 {
+	padding-bottom: 8px;
+}
+
+.map {
+	width: 60%;
+	padding-top: 60px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+/*sisselogimine*/
+
+.login {
+	background-color: #E5E7E9;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 30px;
+}
+
+.login-item, .input {
+	margin-bottom: 8px;
+	float: left;
+}
+
+.login-item {
+	text-align: right;
+	width: 40%;
+	margin-right: 10px;
+}
+
+.input {
+	width: 20%;
+	margin-right: 200px;
+}
+
+/*jalus*/
+
+footer {
+	text-align: center;
+	padding-bottom: 10px;
+	height: 30px;
+}
+
+.copyright {
+	padding-bottom: 8px;
+}
+
+.footer-links li {
+	display: inline;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: #F39C12;
+	margin: 0px 10px 0px 10px;
+    padding: 8px;
+}
+
+.footer-links a:hover{
+	color: #307D7E;
+}
+
